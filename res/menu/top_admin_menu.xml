@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_session"
+        android:icon="@drawable/i_add_session"
+        android:title="Add Session" />
+    <item
+        android:id="@+id/navigation_editsession"
+        android:icon="@drawable/i_edit_session"
+        android:title="Edit Session" />
+    <item
+        android:id="@+id/navigation_comments"
+        android:icon="@drawable/i_accept_comments"
+        android:title="Accept Comments" />
+    <item
+        android:id="@+id/navigation_logout"
+        android:icon="@drawable/i_logout"
+        android:title="Log Out" />
+</menu>

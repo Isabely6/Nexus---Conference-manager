@@ -1,0 +1,420 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#EAEAEA"
+    tools:context=".FragmentSchedule">
+
+    <TextView
+        android:id="@+id/Day"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Schedule"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Day 1 -->
+            <TextView
+                android:id="@+id/tvday1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="June 26"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+
+            <!-- Hours for Day 1 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Hour 10 -->
+                <TextView
+                    android:id="@+id/textViewList1_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10:00 AM"
+                    android:textSize="16dp"
+                    android:padding="8dp"/>
+
+                <!-- RecyclerView for Hour 10 -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewList1_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"/>
+
+                <!-- Hour 11 -->
+                <TextView
+                    android:id="@+id/textViewList1_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="11:00 AM"
+                    android:textSize="16dp"
+                    android:padding="8dp"/>
+
+                <!-- RecyclerView for Hour 11 -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewList1_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"/>
+
+                <!-- Hour 12 -->
+                <TextView
+                    android:id="@+id/textViewList1_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12:00 PM"
+                    android:textSize="16dp"
+                    android:padding="8dp"/>
+
+                <!-- RecyclerView for Hour 12 -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewList1_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"/>
+
+                <!-- Hour 14 -->
+                <TextView
+                    android:id="@+id/textViewList1_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2:00 PM"
+                    android:textSize="16dp"
+                    android:padding="8dp"/>
+
+                <!-- RecyclerView for Hour 14 -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewList1_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"/>
+
+                <!-- Hour 15 -->
+                <TextView
+                    android:id="@+id/textViewList1_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3:00 PM"
+                    android:textSize="16dp"
+                    android:padding="8dp"/>
+
+                <!-- RecyclerView for Hour 15 -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewList1_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"/>
+
+                <!-- Hour 16 -->
+                <TextView
+                    android:id="@+id/textViewList1_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4:00 PM"
+                    android:textSize="16dp"
+                    android:padding="8dp"/>
+
+                <!-- RecyclerView for Hour 16 -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewList1_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"/>
+
+                <!-- Hour 17 -->
+                <TextView
+                    android:id="@+id/textViewList1_17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5:00 PM"
+                    android:textSize="16dp"
+                    android:padding="8dp"/>
+
+                <!-- RecyclerView for Hour 17 -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewList1_17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"/>
+
+            </LinearLayout>
+
+            <!-- Day 2 -->
+            <TextView
+                android:id="@+id/tvday2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="June 27"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+
+            <!-- Hours for Day 2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Hour 10 -->
+                <TextView
+                    android:id="@+id/textViewList2_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10:00 AM"
+                    android:textSize="16dp"
+                    android:padding="8dp"/>
+
+                <!-- RecyclerView for Hour 10 -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewList2_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"/>
+
+                <!-- Hour 11 -->
+                <TextView
+                    android:id="@+id/textViewList2_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="11:00 AM"
+                    android:textSize="16dp"
+                    android:padding="8dp"/>
+
+                <!-- RecyclerView for Hour 11 -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewList2_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"/>
+
+                <!-- Hour 12 -->
+                <TextView
+                    android:id="@+id/textViewList2_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12:00 PM"
+                    android:textSize="16dp"
+                    android:padding="8dp"/>
+
+                <!-- RecyclerView for Hour 12 -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewList2_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"/>
+
+                <!-- Hour 14 -->
+                <TextView
+                    android:id="@+id/textViewList2_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2:00 PM"
+                    android:textSize="16dp"
+                    android:padding="8dp"/>
+
+                <!-- RecyclerView for Hour 14 -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewList2_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"/>
+
+                <!-- Hour 15 -->
+                <TextView
+                    android:id="@+id/textViewList2_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3:00 PM"
+                    android:textSize="16dp"
+                    android:padding="8dp"/>
+
+                <!-- RecyclerView for Hour 15 -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewList2_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"/>
+
+                <!-- Hour 16 -->
+                <TextView
+                    android:id="@+id/textViewList2_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4:00 PM"
+                    android:textSize="16dp"
+                    android:padding="8dp"/>
+
+                <!-- RecyclerView for Hour 16 -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewList2_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"/>
+
+                <!-- Hour 17 -->
+                <TextView
+                    android:id="@+id/textViewList2_17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5:00 PM"
+                    android:textSize="16dp"
+                    android:padding="8dp"/>
+
+                <!-- RecyclerView for Hour 17 -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewList2_17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"/>
+
+            </LinearLayout>
+
+            <!-- Day 3 -->
+            <TextView
+                android:id="@+id/tvday3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="June 28"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:padding="10dp"/>
+
+            <!-- Hours for Day 3 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- Hour 10 -->
+                <TextView
+                    android:id="@+id/textViewList3_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10:00 AM"
+                    android:textSize="16dp"
+                    android:padding="8dp"/>
+
+                <!-- RecyclerView for Hour 10 -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewList3_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"/>
+
+                <!-- Hour 11 -->
+                <TextView
+                    android:id="@+id/textViewList3_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="11:00 AM"
+                    android:textSize="16dp"
+                    android:padding="8dp"/>
+
+                <!-- RecyclerView for Hour 11 -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewList3_11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"/>
+
+                <!-- Hour 12 -->
+                <TextView
+                    android:id="@+id/textViewList3_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="12:00 PM"
+                    android:textSize="16dp"
+                    android:padding="8dp"/>
+
+                <!-- RecyclerView for Hour 12 -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewList3_12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"/>
+
+                <!-- Hour 14 -->
+                <TextView
+                    android:id="@+id/textViewList3_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="2:00 PM"
+                    android:textSize="16dp"
+                    android:padding="8dp"/>
+
+                <!-- RecyclerView for Hour 14 -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewList3_14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"/>
+
+                <!-- Hour 15 -->
+                <TextView
+                    android:id="@+id/textViewList3_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3:00 PM"
+                    android:textSize="16dp"
+                    android:padding="8dp"/>
+
+                <!-- RecyclerView for Hour 15 -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewList3_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"/>
+
+                <!-- Hour 16 -->
+                <TextView
+                    android:id="@+id/textViewList3_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4:00 PM"
+                    android:textSize="16dp"
+                    android:padding="8dp"/>
+
+                <!-- RecyclerView for Hour 16 -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewList3_16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"/>
+
+                <!-- Hour 17 -->
+                <TextView
+                    android:id="@+id/textViewList3_17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5:00 PM"
+                    android:textSize="16dp"
+                    android:padding="8dp"/>
+
+                <!-- RecyclerView for Hour 17 -->
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewList3_17"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

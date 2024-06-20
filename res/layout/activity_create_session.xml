@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#EAEAEA"
+    tools:context=".CreateSessionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:padding="16dp">
+
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ Session"
+                android:textSize="15sp"
+                android:backgroundTint="#000000"
+                android:layout_marginEnd="16dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Accept Comments"
+                android:textSize="15sp"
+                android:backgroundTint="#000000"/>
+        </LinearLayout>
+
+        <!-- Session Form -->
+        <!-- Presentation Details -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/edit_text_background">
+
+            <!-- Presentation Name -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Title"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"/>
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Title"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <!-- Presentation Track -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Track"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"/>
+            <EditText
+                android:id="@+id/track"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Track"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <!-- Track Description-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Track Description"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"/>
+
+            <EditText
+                android:id="@+id/trackdesc"
+                android:layout_width="match_parent"
+                android:layout_height="84dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Track Description"
+                android:gravity= "top"
+                android:inputType="textMultiLine"
+                android:padding="10dp" />
+
+            <!-- Presentation Author -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Author"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"/>
+            <EditText
+                android:id="@+id/author"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Author"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+            <!-- Presentation Date -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Date (yyyy/mm/dd)"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"/>
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Date (yyyy/mm/dd)"
+                android:inputType="date"
+                android:padding="10dp" />
+
+            <!-- Presentation Time -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Time (hh:mm)"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"/>
+            <EditText
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Time (hh:mm)"
+                android:inputType="time"
+                android:padding="10dp" />
+
+            <!-- Presentation Venue -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Room"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"/>
+            <EditText
+                android:id="@+id/room"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/edit_text_background"
+                android:hint="Room"
+                android:inputType="number"
+                android:padding="10dp" />
+
+            <!-- Presentation Abstract -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Abstract"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"/>
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/edit_text_background"
+                android:gravity="top"
+                android:hint="Abstract"
+                android:inputType="textMultiLine"
+                android:minLines="3"
+                android:padding="10dp" />
+        </LinearLayout>
+
+        <!-- Publish Button -->
+        <Button
+            android:id="@+id/publish_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Publish"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="#2E2E2E" />
+    </LinearLayout>
+</ScrollView>

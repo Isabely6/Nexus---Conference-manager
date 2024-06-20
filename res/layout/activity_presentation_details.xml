@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EAEAEA">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#EAEAEA"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="15dp" >
+
+                <ImageButton
+                android:id="@+id/backArrow"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:scaleType="fitCenter"
+                android:src="@drawable/back_arrow" />
+
+                <ImageButton
+                    android:id="@+id/userProfile"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="300dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/user_profile" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/presentationTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:text="Generative AI - a Hope to Fill the IT Talent Gap in the EU"
+                android:textAlignment="center"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:padding="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/presentationDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corners_info"
+                    android:fontFamily="@font/gfs_neohellenic"
+                    android:text="MAY 02 Thr"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:padding="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:backgroundTint="#FFFFFF" />
+
+                <TextView
+                    android:id="@+id/presentationTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:background="@drawable/rounded_corners_info"
+                    android:backgroundTint="#FFFFFF"
+                    android:fontFamily="@font/gfs_neohellenic"
+                    android:padding="15dp"
+                    android:text="10:00"
+                    android:textAlignment="center"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <ImageView
+                    android:id="@+id/locationPin"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/location_pin" />
+
+                <TextView
+                    android:id="@+id/presentationRoom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/gfs_neohellenic"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:text="Main Auditorium"
+                    android:textColor="#C6C6C6"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- Speaker Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="8dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/user_placeholder"/>
+
+                    <TextView
+                        android:id="@+id/presentationSpeaker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/gfs_neohellenic"
+                        android:text="-Speaker Name-"
+                        android:textAlignment="center"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Abstract Section -->
+            <TextView
+                android:id="@+id/sectionTitle1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_bold"
+                android:padding="5dp"
+                android:text="Abstract"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans"
+                android:lineSpacingExtra="8sp"
+                android:text="The European Union currently boasts a workforce of 9 million IT professionals. However, the European Commission forecasts a staggering need for an additional 11 million IT specialists within the next six years to meet the surging demand. Could generative AI be the critical lifeline we're grasping for?"
+                android:textSize="16sp"
+                android:padding="5dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"/>
+
+            <!-- Article PDF Section -->
+            <TextView
+                android:id="@+id/sectionTitle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_bold"
+                android:padding="5dp"
+                android:text="Article PDF"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <!-- Insert code for a pdf file -->
+
+
+            <!-- Comments Section -->
+            <TextView
+                android:id="@+id/sectionTitle3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/open_sans_bold"
+                android:padding="5dp"
+                android:text="Comments"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/editTextComment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:padding="20dp"
+                android:fontFamily="@font/open_sans"
+                android:inputType="text"
+                android:text="Add comment"
+                android:textSize="16dp" />
+
+            <!-- Comments -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:background="@drawable/rounded_corners_info"
+                    android:backgroundTint="#FFFFFF">
+
+                    <LinearLayout
+                        android:id="@+id/comment_box"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="10dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:layout_marginEnd="10dp"
+                                android:src="@drawable/user_placeholder" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="-Username-"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="-comment text-"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/reply_button"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:padding="8dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/reply_arrow" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="330dp"
+                    android:src="@drawable/inverted_triangle"
+                    android:rotation="180"/>
+
+                <!-- Reply -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="15dp"
+                    android:background="@drawable/rounded_corners_info"
+                    android:backgroundTint="#C6C6C6">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-reply-"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/inverted_triangle"
+                    app:tint="#C6C6C6"
+                    android:rotation="180"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
